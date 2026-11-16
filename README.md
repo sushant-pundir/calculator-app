@@ -7,30 +7,13 @@ A REST API calculator built using Python, Flask and Flask-RESTful.
 - Subtraction
 - Multiplication
 - Division
-- JSON API requests and responses
-- Unit tests
-
-## Technologies
-- Python 3
-- Flask
-- Flask-RESTful
-- Unittest
+- JSON API support
+- Unit testing
 
 ## Installation
 
-Clone the repository:
-
-    git clone https://github.com/sushant-pundir/calculator-app.git
-
-    cd calculator-app
-
-Create a virtual environment:
-
     python3 -m venv .venv
     source .venv/bin/activate
-
-Install dependencies:
-
     pip install -r requirements.txt
 
 ## Run
@@ -48,13 +31,7 @@ Server: http://127.0.0.1:5000
 | POST | /multiply |
 | POST | /division |
 
-## Example
-
-    curl -X POST http://127.0.0.1:5000/add \
-    -H "Content-Type: application/json" \
-    -d '{"x":100,"y":20}'
-
-## Testing
+## Tests
 
     python -m unittest test_app -v
 
@@ -62,7 +39,7 @@ Server: http://127.0.0.1:5000
 
 Based on Flask Calculator Beginner Docker by Santhosh Kumar D.
 
-Original project:
+Original repository:
 https://github.com/Santhoshkumard11/Flask-Calculator-Beginner-Docker
 
-The original MIT licence is retained.
+Original MIT license retained.
