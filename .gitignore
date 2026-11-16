@@ -132,3 +132,8 @@ dmypy.json
 .venv/
 __pycache__/
 *.py[cod]
+
+# Local environments
+.venv/
+__pycache__/
+*.py[cod]
