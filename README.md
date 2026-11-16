@@ -1,0 +1,68 @@
+# Python Flask Calculator API
+
+A REST API calculator built using Python, Flask and Flask-RESTful.
+
+## Features
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- JSON API requests and responses
+- Unit tests
+
+## Technologies
+- Python 3
+- Flask
+- Flask-RESTful
+- Unittest
+
+## Installation
+
+Clone the repository:
+
+    git clone https://github.com/sushant-pundir/calculator-app.git
+
+    cd calculator-app
+
+Create a virtual environment:
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+Install dependencies:
+
+    pip install -r requirements.txt
+
+## Run
+
+    python app.py
+
+Server: http://127.0.0.1:5000
+
+## API Endpoints
+
+| Method | Endpoint |
+|---|---|
+| POST | /add |
+| POST | /subtract |
+| POST | /multiply |
+| POST | /division |
+
+## Example
+
+    curl -X POST http://127.0.0.1:5000/add \
+    -H "Content-Type: application/json" \
+    -d '{"x":100,"y":20}'
+
+## Testing
+
+    python -m unittest test_app -v
+
+## Attribution
+
+Based on Flask Calculator Beginner Docker by Santhosh Kumar D.
+
+Original project:
+https://github.com/Santhoshkumard11/Flask-Calculator-Beginner-Docker
+
+The original MIT licence is retained.
